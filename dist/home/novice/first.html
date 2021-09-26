@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lintCode_question_set</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="/lintcode_question_set_javaScript/css/style.css">
+    <meta name="description" content="技术平台">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/lintcode_question_set_javaScript/assets/css/0.styles.21eed3b2.css" as="style"><link rel="preload" href="/lintcode_question_set_javaScript/assets/js/app.fe3ce55c.js" as="script"><link rel="preload" href="/lintcode_question_set_javaScript/assets/js/2.9e003a6a.js" as="script"><link rel="preload" href="/lintcode_question_set_javaScript/assets/js/10.27d4f286.js" as="script"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/11.a38dd1d3.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/3.36c5b51d.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/4.3baea95d.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/5.3fb5221a.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/6.0ae04a39.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/7.ab07fe67.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/8.f1e8e31e.js"><link rel="prefetch" href="/lintcode_question_set_javaScript/assets/js/9.c6c18bad.js">
+    <link rel="stylesheet" href="/lintcode_question_set_javaScript/assets/css/0.styles.21eed3b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/lintcode_question_set_javaScript/" class="home-link router-link-active"><!----> <span class="site-name">lintCode_question_set</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/lintcode_question_set_javaScript/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/lintcode_question_set_javaScript/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>简介</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lintcode_question_set_javaScript/home/brife/brife.html" class="sidebar-link">test</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>新手50题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lintcode_question_set_javaScript/home/novice/first.html" aria-current="page" class="active sidebar-link">第一阶段</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lintcode_question_set_javaScript/home/novice/first.html#第一阶段" class="sidebar-link">第一阶段</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="新手必刷-50-题"><a href="#新手必刷-50-题" class="header-anchor">#</a> 新手必刷 50 题</h1> <h2 id="第一阶段"><a href="#第一阶段" class="header-anchor">#</a> 第一阶段</h2> <h3 id="_1、反转一个三位整数"><a href="#_1、反转一个三位整数" class="header-anchor">#</a> 1、反转一个三位整数</h3> <div class="custom-block tip"><p class="custom-block-title">描述</p> <p>反转一个只有 3 位数的整数。你可以假设输入一定是一个只有三位数的整数，这个整数大于等于 100，小于 1000。</p></div> <h4 id="样例-1"><a href="#样例-1" class="header-anchor">#</a> 样例 1：</h4> <div class="language- extra-class"><pre><code>输入：
+number = 123
+输出：
+321
+
+输入：
+number = 900
+输出：
+9
+反转数字
+</code></pre></div><h4 id="题解"><a href="#题解" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * reverseInteger
+   *
+   * @param number: A 3-digit number.
+   * @return: Reversed number.
+   */</span>
+  <span class="token comment">// 解法一 使用数组的reverse方法。现将数值转为字符串，再转为数组后反转，将数组转为字符串再转为数值</span>
+  <span class="token function">reverseInteger</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">return</span> <span class="token function">Number</span><span class="token punctuation">(</span>
+      number
+        <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 解法二 （不推荐）</span>
+  <span class="token comment">/* 
+    1、先获取到个位数 再乘100 得到结果的百分位
+    2、再求余100并减去个位数得到10分位
+    3、最后将number除100 得到结果的个位
+  
+  */</span>
+  <span class="token function">reverseInteger1</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token punctuation">(</span>number <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100</span> <span class="token operator">+</span>
+      <span class="token punctuation">(</span>number <span class="token operator">%</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">-</span>
+      <span class="token punctuation">(</span>number <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+      <span class="token function">parseInt</span><span class="token punctuation">(</span>number <span class="token operator">/</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2、a-b-问题"><a href="#_2、a-b-问题" class="header-anchor">#</a> 2、a + b 问题</h3> <div class="custom-block tip"><p class="custom-block-title">描述</p> <p>使用位运算符的情况下
+给出两个整数 a 和 b , 求他们的和并以整数（int）的形式返回。</p></div> <h4 id="样例-1-2"><a href="#样例-1-2" class="header-anchor">#</a> 样例 1：</h4> <div class="language- extra-class"><pre><code>输入：
+a = 1
+b = 2
+输出：
+3
+
+输入：
+a = -1
+b = 1
+输出：
+0
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * aplusb
+   *
+   * @param a: An integer
+   * @param b: An integer
+   * @return: The sum of a and b
+   */</span>
+  <span class="token function">aplusb</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> sum <span class="token operator">=</span> a <span class="token operator">^</span> b<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> carry <span class="token operator">=</span> <span class="token punctuation">(</span>a <span class="token operator">&amp;</span> b<span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">aplusb</span><span class="token punctuation">(</span>sum<span class="token punctuation">,</span> carry<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3、巴什博弈"><a href="#_3、巴什博弈" class="header-anchor">#</a> 3、巴什博弈</h3> <div class="custom-block tip"><p class="custom-block-title">描述</p> <p>你正在和朋友玩一个游戏：桌子上有一堆石头，每一次你们都会从中拿出 1 到 3 个石头。拿走最后一个石头的人赢得游戏。游戏开始时，你是先手。
+假设两个人都绝对理性，都会做出最优决策。给定石头的数量，判断你是否会赢得比赛。
+举例：有四个石头，那么你永远不会赢得游戏。不管拿几个，最后一个石头一定会被你的朋友拿走</p></div> <h4 id="样例-1-3"><a href="#样例-1-3" class="header-anchor">#</a> 样例 1：</h4> <div class="language- extra-class"><pre><code>输入：n = 4
+输出：False
+解析：先手取走1,2或者3，对方都会取走最后一个
+</code></pre></div><h4 id="样例-2"><a href="#样例-2" class="header-anchor">#</a> 样例 2:</h4> <div class="language- extra-class"><pre><code>输入：n = 5
+输出：True
+解析：先手拿1个，必胜
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * canWinBash
+   *
+   * @param n: an integer
+   * @return: whether you can win the game given the number of stones in the heap
+   */</span>
+  <span class="token comment">//  接替描述</span>
+  <span class="token comment">/* 根据举例
+      因为每次可以拿1-3个石头，所以拿第四个石头的必输，由此发现给出在剩四个石头的时，对方先拿，则我方必输
+      所以题目可以理解成n!==4 或4的倍数
+     */</span>
+  <span class="token function">canWinBash</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token keyword">return</span> n <span class="token operator">%</span> <span class="token number">4</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lintcode_question_set_javaScript/home/brife/brife.html" class="prev">
+        test
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/lintcode_question_set_javaScript/assets/js/app.fe3ce55c.js" defer></script><script src="/lintcode_question_set_javaScript/assets/js/2.9e003a6a.js" defer></script><script src="/lintcode_question_set_javaScript/assets/js/10.27d4f286.js" defer></script>
+  </body>
+</html>
