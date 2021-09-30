@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lintCode_question_set</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon">
+    <link rel="stylesheet" href="/pf_git_pages/css/style.css">
+    <meta name="description" content="基于javaScript语言的lintCode题解">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="js,lintCode,lintCode题解 js,javaScript lintCode">
+    
+    <link rel="preload" href="/pf_git_pages/assets/css/0.styles.b8c3cecf.css" as="style"><link rel="preload" href="/pf_git_pages/assets/js/app.f5406072.js" as="script"><link rel="preload" href="/pf_git_pages/assets/js/2.9e003a6a.js" as="script"><link rel="preload" href="/pf_git_pages/assets/js/11.887095ae.js" as="script"><link rel="prefetch" href="/pf_git_pages/assets/js/10.b62f0df4.js"><link rel="prefetch" href="/pf_git_pages/assets/js/12.1a85b104.js"><link rel="prefetch" href="/pf_git_pages/assets/js/13.1e572d7b.js"><link rel="prefetch" href="/pf_git_pages/assets/js/14.9cbb5078.js"><link rel="prefetch" href="/pf_git_pages/assets/js/3.7dd0165a.js"><link rel="prefetch" href="/pf_git_pages/assets/js/4.3baea95d.js"><link rel="prefetch" href="/pf_git_pages/assets/js/5.3fb5221a.js"><link rel="prefetch" href="/pf_git_pages/assets/js/6.0ae04a39.js"><link rel="prefetch" href="/pf_git_pages/assets/js/7.faf4cc62.js"><link rel="prefetch" href="/pf_git_pages/assets/js/8.555d6b23.js"><link rel="prefetch" href="/pf_git_pages/assets/js/9.8a7ba6f9.js">
+    <link rel="stylesheet" href="/pf_git_pages/assets/css/0.styles.b8c3cecf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/pf_git_pages/" class="home-link router-link-active"><!----> <span class="site-name">lintCode_question_set</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pf_git_pages/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pf_git_pages/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>简介</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pf_git_pages/home/brife/brife.html" class="sidebar-link">test</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>新手50题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pf_git_pages/home/novice/first.html" class="sidebar-link">第一阶段</a></li><li><a href="/pf_git_pages/home/novice/second.html" class="sidebar-link">第二阶段</a></li><li><a href="/pf_git_pages/home/novice/third.html" class="sidebar-link">第三阶段</a></li><li><a href="/pf_git_pages/home/novice/fourth.html" aria-current="page" class="active sidebar-link">第四阶段(字符串与循环)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_30、转换字符串到整数-容易版" class="sidebar-link">30、转换字符串到整数（容易版）</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_31、大小写转换-ii" class="sidebar-link">31、大小写转换 II</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_32、字符串查找" class="sidebar-link">32、字符串查找</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_33、转换成小写字母" class="sidebar-link">33、转换成小写字母</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_34、两字符串和" class="sidebar-link">34、两字符串和</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_35、首字母大写" class="sidebar-link">35、首字母大写</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_36、回文数" class="sidebar-link">36、回文数</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_37、最长单词" class="sidebar-link">37、最长单词</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_38、最后一个单词的长度" class="sidebar-link">38、最后一个单词的长度</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_39、最大字母" class="sidebar-link">39、最大字母</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/novice/fourth.html#_40、旋转字符串" class="sidebar-link">40、旋转字符串</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_30、转换字符串到整数-容易版"><a href="#_30、转换字符串到整数-容易版" class="header-anchor">#</a> 30、转换字符串到整数（容易版）</h2> <h4 id="描述"><a href="#描述" class="header-anchor">#</a> 描述</h4> <p>给一个字符串, 转换为整数。你可以假设这个字符串是一个有效整数的字符串形式， 且范围在 32 位整数之间 (-231 ~ 231 - 1)。</p> <h4 id="题解"><a href="#题解" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">stringToInteger</span><span class="token punctuation">(</span><span class="token parameter">target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">return</span> <span class="token function">Number</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_31、大小写转换-ii"><a href="#_31、大小写转换-ii" class="header-anchor">#</a> 31、大小写转换 II</h2> <h4 id="描述-2"><a href="#描述-2" class="header-anchor">#</a> 描述</h4> <p>将一个字符串中的小写字母转换为大写字母。不是字母的字符不需要做改变。</p> <h4 id="题解-2"><a href="#题解-2" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * lowercaseToUppercase2
+   *
+   * @param str: A string
+   * @return: A string
+   */</span>
+  <span class="token function">lowercaseToUppercase2</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_32、字符串查找"><a href="#_32、字符串查找" class="header-anchor">#</a> 32、字符串查找</h2> <h4 id="描述-3"><a href="#描述-3" class="header-anchor">#</a> 描述</h4> <p>对于一个给定的 source 字符串和一个 target 字符串，你应该在 source 字符串中找出 target 字符串出现的第一个位置(从 0 开始)。如果不存在，则返回 -1。</p> <h4 id="题解-3"><a href="#题解-3" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">strStr</span><span class="token punctuation">(</span><span class="token parameter">source<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token keyword">return</span> source<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_33、转换成小写字母"><a href="#_33、转换成小写字母" class="header-anchor">#</a> 33、转换成小写字母</h2> <h4 id="描述-4"><a href="#描述-4" class="header-anchor">#</a> 描述</h4> <p>实现函数 ToLowerCase()，该函数接收一个字符串参数 str，并将该字符串中的大写字母转换成小写字母，之后返回新的字符串。</p> <h4 id="题解-4"><a href="#题解-4" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_34、两字符串和"><a href="#_34、两字符串和" class="header-anchor">#</a> 34、两字符串和</h2> <h4 id="描述-5"><a href="#描述-5" class="header-anchor">#</a> 描述</h4> <p>给定两个仅含数字的字符串，你需要返回一个由各个位之和拼接的字符串</p> <ul><li>A 和 B 是由数字组成的字符串</li></ul> <h4 id="样例"><a href="#样例" class="header-anchor">#</a> 样例</h4> <div class="language- extra-class"><pre><code>示例1:
+输入:
+A = &quot;99&quot;
+B = &quot;111&quot;
+输出: &quot;11010&quot;
+解释: 因为 9 + 1 = 10, 9 + 1 = 10, 0 + 1 = 1,连接之后的结果是 &quot;11010&quot;
+
+示例2:
+输入:
+A = &quot;2&quot;
+B = &quot;321&quot;
+输出: &quot;323&quot;
+解释: 因为 1 + 2 = 3, 2 + 0 = 2, 3 + 0 = 3,连接之后的结果是 &quot;323&quot;
+</code></pre></div><h4 id="题解-5"><a href="#题解-5" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">SumofTwoStrings</span><span class="token punctuation">(</span><span class="token parameter"><span class="token constant">A</span><span class="token punctuation">,</span> <span class="token constant">B</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token comment">// 我们先获取到最长的字符串</span>
+    <span class="token keyword">let</span> len <span class="token operator">=</span> <span class="token constant">A</span><span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token constant">B</span><span class="token punctuation">.</span>length <span class="token operator">?</span> <span class="token constant">A</span><span class="token punctuation">.</span>length <span class="token operator">:</span> <span class="token constant">B</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token constant">A</span> <span class="token operator">=</span> <span class="token constant">A</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span>len<span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 为字符串进行头部补全，限制长度为len。所以只会为短的字符补0</span>
+    <span class="token constant">B</span> <span class="token operator">=</span> <span class="token constant">B</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span>len<span class="token punctuation">,</span> <span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// 循环按位相加</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span><span class="token constant">A</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">Number</span><span class="token punctuation">(</span><span class="token constant">B</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 转化为字符串</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_35、首字母大写"><a href="#_35、首字母大写" class="header-anchor">#</a> 35、首字母大写</h2> <h4 id="描述-6"><a href="#描述-6" class="header-anchor">#</a> 描述</h4> <p>输入一个英文句子，将每个单词的第一个字母改成大写字母</p> <ul><li>这个句子可能并不是一个符合语法规则的句子。</li> <li>句子长度小于等于 100。</li></ul> <h4 id="样例-2"><a href="#样例-2" class="header-anchor">#</a> 样例</h4> <div class="language- extra-class"><pre><code>输入: s =  &quot;i want to get an accepted&quot;
+输出: &quot;I Want To Get An Accepted&quot;
+
+输入: s =  &quot;i jidls    mdijf  i  lsidj  i p l   &quot;
+输出: &quot;I Jidls Mdijf I Lsidj I P L &quot;
+</code></pre></div><h4 id="题解-6"><a href="#题解-6" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">capitalizesFirst</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\b\w</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> v<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_36、回文数"><a href="#_36、回文数" class="header-anchor">#</a> 36、回文数</h2> <h4 id="描述-7"><a href="#描述-7" class="header-anchor">#</a> 描述</h4> <ul><li><p>判断一个正整数是不是回文数。</p></li> <li><p>回文数的定义是，将这个数反转之后，得到的数仍然是同一个数。</p></li></ul> <h4 id="样例-3"><a href="#样例-3" class="header-anchor">#</a> 样例</h4> <div class="language- extra-class"><pre><code>输入：11
+输出：true
+输入：1232
+输出：false
+解释：
+1232!=2321
+</code></pre></div><h4 id="题解-7"><a href="#题解-7" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">isPalindrome</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// write your code here</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      num <span class="token operator">===</span>
+      <span class="token function">Number</span><span class="token punctuation">(</span>
+        num
+          <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_37、最长单词"><a href="#_37、最长单词" class="header-anchor">#</a> 37、最长单词</h2> <h4 id="描述-8"><a href="#描述-8" class="header-anchor">#</a> 描述</h4> <p>给一个词典，找出其中所有最长的单词。</p> <div class="language- extra-class"><pre><code>样例 1:
+    输入: {
+        &quot;dog&quot;,
+        &quot;google&quot;,
+        &quot;facebook&quot;,
+        &quot;internationalization&quot;,
+        &quot;blabla&quot;
+        }
+    输出: [&quot;internationalization&quot;]
+样例 2:
+    输入: {
+        &quot;like&quot;,
+        &quot;love&quot;,
+        &quot;hate&quot;,
+        &quot;yes&quot;
+        }
+    输出: [&quot;like&quot;, &quot;love&quot;, &quot;hate&quot;]
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>本题没有 JavaScript 运行环境</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">longestWords</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> long <span class="token operator">=</span> arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>v<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> long<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      long <span class="token operator">=</span> v<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">v</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> v<span class="token punctuation">.</span>length <span class="token operator">===</span> long<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_38、最后一个单词的长度"><a href="#_38、最后一个单词的长度" class="header-anchor">#</a> 38、最后一个单词的长度</h2> <h4 id="描述-9"><a href="#描述-9" class="header-anchor">#</a> 描述</h4> <ul><li>给定一个字符串， 包含大小写字母、空格 ' '，请返回其最后一个单词的长度。</li> <li>如果不存在最后一个单词，请返回 0 。</li></ul> <h4 id="样例-4"><a href="#样例-4" class="header-anchor">#</a> 样例</h4> <div class="language- extra-class"><pre><code>输入：&quot;Hello World&quot;
+输出：5
+
+输入：&quot;Hello LintCode&quot;
+输出：8
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>本题没有 JavaScript 运行环境</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">lengthOfLastWord</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> arr <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">.</span>length <span class="token operator">?</span> arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_39、最大字母"><a href="#_39、最大字母" class="header-anchor">#</a> 39、最大字母</h2> <h4 id="描述-10"><a href="#描述-10" class="header-anchor">#</a> 描述</h4> <ul><li><p>给定字符串 S，找到最大的字母字符，其大写和小写字母均出现在 S 中，则返回此字母的大写，若不存在则返回&quot;NO&quot;。</p> <p>输入: S = &quot;admeDCAB&quot;
+输出: &quot;D&quot;</p> <p>输入: S = &quot;adme&quot;
+输出: &quot;NO&quot;</p></li></ul> <h4 id="题解-8"><a href="#题解-8" class="header-anchor">#</a> 题解</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+  <span class="token function">largestLetter</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Write your code here</span>
+    <span class="token comment">// 节省性能</span>
+    <span class="token keyword">let</span> lowerS <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> upperS <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>s <span class="token operator">==</span> lowerS <span class="token operator">||</span> s <span class="token operator">==</span> upperS<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token string">'NO'</span><span class="token punctuation">;</span>
+    <span class="token comment">// 替换掉小写字母</span>
+    s <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[a-z]</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> res <span class="token operator">=</span> s<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res <span class="token operator">=</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_40、旋转字符串"><a href="#_40、旋转字符串" class="header-anchor">#</a> 40、旋转字符串</h2> <h4 id="描述-11"><a href="#描述-11" class="header-anchor">#</a> 描述</h4> <ul><li>给定一个字符串 str 和一个偏移量，根据偏移量原地旋转字符串(从左向右旋转)。</li> <li>对于不同的语言，str 将以不用的形式给出，例如对于字符串 &quot;abc&quot; ，将以下面的形式给出</li></ul> <h4 id="样例-5"><a href="#样例-5" class="header-anchor">#</a> 样例</h4> <h5 id="样例-1"><a href="#样例-1" class="header-anchor">#</a> 样例 1</h5> <div class="language- extra-class"><pre><code>str = &quot;abcdefg&quot;
+offset = 3
+输出：
+&quot;efgabcd&quot;
+</code></pre></div><h5 id="样例-2-2"><a href="#样例-2-2" class="header-anchor">#</a> 样例 2</h5> <div class="language- extra-class"><pre><code>输入：
+str = &quot;abcdefg&quot;
+offset = 0
+输出：
+&quot;abcdefg&quot;
+</code></pre></div><h5 id="样例-3-2"><a href="#样例-3-2" class="header-anchor">#</a> 样例 3</h5> <div class="language- extra-class"><pre><code>输入：
+str = &quot;abcdefg&quot;
+offset = 10
+输出：
+&quot;efgabcd&quot;
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">说明</p> <p>此题没有 JavaScript 运行环境</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">rotateString</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span> offset</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> arr <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> offset<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    arr<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pf_git_pages/home/novice/third.html" class="prev">
+        第三阶段
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/pf_git_pages/assets/js/app.f5406072.js" defer></script><script src="/pf_git_pages/assets/js/2.9e003a6a.js" defer></script><script src="/pf_git_pages/assets/js/11.887095ae.js" defer></script>
+  </body>
+</html>
