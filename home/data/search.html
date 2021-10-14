@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lintCode_question_set</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon">
+    <link rel="stylesheet" href="/pf_git_pages/css/style.css">
+    <meta name="description" content="基于javaScript语言的lintCode题解">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="js,lintCode,lintCode题解 js,javaScript lintCode">
+    
+    <link rel="preload" href="/pf_git_pages/assets/css/0.styles.b8c3cecf.css" as="style"><link rel="preload" href="/pf_git_pages/assets/js/app.6e80bfeb.js" as="script"><link rel="preload" href="/pf_git_pages/assets/js/2.9e003a6a.js" as="script"><link rel="preload" href="/pf_git_pages/assets/js/14.99849f39.js" as="script"><link rel="prefetch" href="/pf_git_pages/assets/js/10.e9345ad0.js"><link rel="prefetch" href="/pf_git_pages/assets/js/11.e7103a88.js"><link rel="prefetch" href="/pf_git_pages/assets/js/12.d9b1bf5a.js"><link rel="prefetch" href="/pf_git_pages/assets/js/13.252f7fac.js"><link rel="prefetch" href="/pf_git_pages/assets/js/15.6ffd6256.js"><link rel="prefetch" href="/pf_git_pages/assets/js/16.7f36efc2.js"><link rel="prefetch" href="/pf_git_pages/assets/js/17.5edeea10.js"><link rel="prefetch" href="/pf_git_pages/assets/js/18.4dbcf7ab.js"><link rel="prefetch" href="/pf_git_pages/assets/js/19.5023f5c8.js"><link rel="prefetch" href="/pf_git_pages/assets/js/20.e6608b00.js"><link rel="prefetch" href="/pf_git_pages/assets/js/21.f40d2d91.js"><link rel="prefetch" href="/pf_git_pages/assets/js/22.3460c828.js"><link rel="prefetch" href="/pf_git_pages/assets/js/23.8bea3ea5.js"><link rel="prefetch" href="/pf_git_pages/assets/js/3.c087a8de.js"><link rel="prefetch" href="/pf_git_pages/assets/js/4.3baea95d.js"><link rel="prefetch" href="/pf_git_pages/assets/js/5.3fb5221a.js"><link rel="prefetch" href="/pf_git_pages/assets/js/6.0ae04a39.js"><link rel="prefetch" href="/pf_git_pages/assets/js/7.0c0314b0.js"><link rel="prefetch" href="/pf_git_pages/assets/js/8.2259f8c2.js"><link rel="prefetch" href="/pf_git_pages/assets/js/9.06d3a53b.js">
+    <link rel="stylesheet" href="/pf_git_pages/assets/css/0.styles.b8c3cecf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/pf_git_pages/" class="home-link router-link-active"><!----> <span class="site-name">lintCode_question_set</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pf_git_pages/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pf_git_pages/home/brife/brife.html" class="nav-link">
+  指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>简介</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pf_git_pages/home/brife/brife.html" class="sidebar-link">test</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>新手50题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>常见数据结构题</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pf_git_pages/home/data/list.html" class="sidebar-link">链表</a></li><li><a href="/pf_git_pages/home/data/routine.html" class="sidebar-link">常规题</a></li><li><a href="/pf_git_pages/home/data/string.html" class="sidebar-link">字符串</a></li><li><a href="/pf_git_pages/home/data/array.html" class="sidebar-link">数组</a></li><li><a href="/pf_git_pages/home/data/dynamic.html" class="sidebar-link">动态规划</a></li><li><a href="/pf_git_pages/home/data/sort.html" class="sidebar-link">排序</a></li><li><a href="/pf_git_pages/home/data/search.html" aria-current="page" class="active sidebar-link">查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_1、从上到下打印二叉树" class="sidebar-link">1、从上到下打印二叉树</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_2、从上到下打印二叉树-ii" class="sidebar-link">2、从上到下打印二叉树 II</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_3、从上到下打印二叉树-iii" class="sidebar-link">3、从上到下打印二叉树 III</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_4、使用广度优先方法遍历-dom-树" class="sidebar-link">4、使用广度优先方法遍历 dom 树</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_5、使用深度优先算法遍历-dom-树" class="sidebar-link">5、使用深度优先算法遍历 dom 树</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_6、深度优先算法遍历-dom-树非递归" class="sidebar-link">6、深度优先算法遍历 dom 树非递归</a></li><li class="sidebar-sub-header"><a href="/pf_git_pages/home/data/search.html#_7、寻找两个-dom-节点的共同父节点" class="sidebar-link">7、寻找两个 dom 节点的共同父节点</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_1、广度优先遍历"><a href="#_1、广度优先遍历" class="header-anchor">#</a> 1、广度优先遍历</h1> <h2 id="_1、从上到下打印二叉树"><a href="#_1、从上到下打印二叉树" class="header-anchor">#</a> 1、从上到下打印二叉树</h2> <p>从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。</p> <p>给定二叉树: [3,9,20,null,null,15,7],</p> <div class="language- extra-class"><pre><code> 3
+/ \
+9 20
+  / \
+ 15  7
+</code></pre></div><h4 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">levelOrder</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">// 创建队列，并将根节点入队</span>
+  <span class="token keyword">const</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取根节点，根节点出队</span>
+    <span class="token keyword">const</span> n <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 添加值</span>
+    res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 队头的子节点依次入队</span>
+    n<span class="token punctuation">.</span>left <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    n<span class="token punctuation">.</span>right <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_2、从上到下打印二叉树-ii"><a href="#_2、从上到下打印二叉树-ii" class="header-anchor">#</a> 2、从上到下打印二叉树 II</h2> <p>给定二叉树: [3,9,20,null,null,15,7],</p> <div class="language- extra-class"><pre><code> 3
+/ \
+9 20
+  / \
+ 15  7
+
+返回其层次遍历结果：
+
+[
+[3],
+[9,20],
+[15,7]
+]
+</code></pre></div><h4 id="代码-2"><a href="#代码-2" class="header-anchor">#</a> 代码</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">levelOrder</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 定义个子数组</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> queue<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> item <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      temp<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      item<span class="token punctuation">.</span>left <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      item<span class="token punctuation">.</span>right <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_3、从上到下打印二叉树-iii"><a href="#_3、从上到下打印二叉树-iii" class="header-anchor">#</a> 3、从上到下打印二叉树 III</h2> <p>请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。</p> <p>例如:
+给定二叉树: [3,9,20,null,null,15,7],</p> <div class="language- extra-class"><pre><code> 3
+/ \
+9 20
+  / \
+ 15  7
+</code></pre></div><p>返回其层次遍历结果：</p> <p>[
+[3],
+[20,9],
+[15,7]
+]</p> <h4 id="代码-3"><a href="#代码-3" class="header-anchor">#</a> 代码</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">levelOrder</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">// 定义层级</span>
+  <span class="token keyword">let</span> level <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">[</span>level<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> levelNum <span class="token operator">=</span> queue<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>levelNum<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> item <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 方法一 判段从头进还是从尾进</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>level <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">[</span>level<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">[</span>level<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 方法二</span>
+      res<span class="token punctuation">[</span>level<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      item<span class="token punctuation">.</span>left <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      item<span class="token punctuation">.</span>right <span class="token operator">&amp;&amp;</span> queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 方法二 反转</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>level <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      res<span class="token punctuation">[</span>level<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    level<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_4、使用广度优先方法遍历-dom-树"><a href="#_4、使用广度优先方法遍历-dom-树" class="header-anchor">#</a> 4、使用广度优先方法遍历 dom 树</h2> <h4 id="代码-4"><a href="#代码-4" class="header-anchor">#</a> 代码</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">breadthFirstSearch</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>node<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">// 初始化个队列，将node赋值进去</span>
+  <span class="token keyword">let</span> queue <span class="token operator">=</span> <span class="token punctuation">[</span>node<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">// 定义个结果数组</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">// 遍历队列</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>queue<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 出队</span>
+    <span class="token keyword">let</span> item <span class="token operator">=</span> queue<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 插入结果数组</span>
+    res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> childs <span class="token operator">=</span> item<span class="token punctuation">.</span>children<span class="token punctuation">;</span>
+    <span class="token comment">// 遍历子节点</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> childs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 入队</span>
+      queue<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>childs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5、使用深度优先算法遍历-dom-树"><a href="#_5、使用深度优先算法遍历-dom-树" class="header-anchor">#</a> 5、使用深度优先算法遍历 dom 树</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">deepFirstSearch</span><span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">,</span> nodeList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 第二个参数传空数组</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    nodeList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> childs <span class="token operator">=</span> node<span class="token punctuation">.</span>chileren<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> childs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">deepFirstSearch</span><span class="token punctuation">(</span>childs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> nodeList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> nodeList<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6、深度优先算法遍历-dom-树非递归"><a href="#_6、深度优先算法遍历-dom-树非递归" class="header-anchor">#</a> 6、深度优先算法遍历 dom 树非递归</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">deepFirstSearch</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> nodes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> stack <span class="token operator">=</span> <span class="token punctuation">[</span>node<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>stack<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> item <span class="token operator">=</span> stack<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      nodes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">let</span> childs <span class="token operator">=</span> item<span class="token punctuation">.</span>children<span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> childs<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>childs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> nodes<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7、寻找两个-dom-节点的共同父节点"><a href="#_7、寻找两个-dom-节点的共同父节点" class="header-anchor">#</a> 7、寻找两个 dom 节点的共同父节点</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">commonParentNode</span><span class="token punctuation">(</span><span class="token parameter">node1<span class="token punctuation">,</span> node2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 方法一 递归</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>node1<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>node2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> node1<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">commonParentNode</span><span class="token punctuation">(</span>node1<span class="token punctuation">.</span>parentNode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 方法二 循环</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>node1<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>node2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> node1<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      node1 <span class="token operator">=</span> node1<span class="token punctuation">.</span>parentNode<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pf_git_pages/home/data/sort.html" class="prev">
+        排序
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/pf_git_pages/assets/js/app.6e80bfeb.js" defer></script><script src="/pf_git_pages/assets/js/2.9e003a6a.js" defer></script><script src="/pf_git_pages/assets/js/14.99849f39.js" defer></script>
+  </body>
+</html>
